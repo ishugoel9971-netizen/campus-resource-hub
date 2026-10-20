@@ -1,0 +1,2 @@
+import React from 'react';
+export default class ErrorBoundary extends React.Component{state={error:null};static getDerivedStateFromError(error){return{error}}render(){if(this.state.error)return <main className="empty"><h2>Something went wrong</h2><p>The resource index could not be displayed.</p><button className="add" onClick={()=>location.reload()}>Reload app</button></main>;return this.props.children}}
