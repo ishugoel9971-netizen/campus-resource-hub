@@ -2,6 +2,10 @@
 
 Campus Resource Hub is a focused knowledge index for students. It keeps useful links and compact study notes organized by semester, subject, and tags so resources remain easy to find after they disappear into chats or cloud folders.
 
+## Live Demo
+
+[Open Campus Resource Hub](https://campus-resource-hub-chbm.vercel.app/)
+
 The project is intentionally not a file-sharing system: it stores links and text notes only. It works immediately in local mode and can optionally connect to Supabase as a shared backend.
 
 ## Product features
@@ -30,7 +34,7 @@ The project is intentionally not a file-sharing system: it stores links and text
 - Lucide React icons
 - Supabase JavaScript client 2.45.4
 - Vercel serverless function for link checking
-- Node.js 20.x
+- Node.js 22.x
 
 The project deliberately avoids TypeScript, React Router, state-management libraries, UI component libraries, and ESLint.
 
@@ -87,7 +91,7 @@ If a Supabase request fails, the session switches to local mode and continues wo
 
 ## Local setup
 
-Requirements: Node.js 20.x and npm.
+Requirements: Node.js 22.x and npm.
 
 ```bash
 npm install
@@ -145,7 +149,7 @@ git remote add origin https://github.com/YOUR_ACCOUNT/YOUR_REPOSITORY.git
 git push -u origin main
 ```
 
-Then import the repository at [vercel.com/new](https://vercel.com/new), use the Vite preset, keep `npm run build` and `dist`, select Node 20, and add the Supabase variables for both Production and Preview if shared storage is desired.
+Then import the repository at [vercel.com/new](https://vercel.com/new), use the Vite preset, keep `npm run build` and `dist`, select Node 22, and add the Supabase variables for both Production and Preview if shared storage is desired.
 
 ## Verification checklist
 
